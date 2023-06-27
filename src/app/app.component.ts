@@ -17,4 +17,8 @@ export class AppComponent {
   getPassword() {
     return this.password;
   }
+
+  getName() {
+    return 'Irem';
+  }
 }
