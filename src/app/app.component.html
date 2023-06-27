@@ -21,7 +21,7 @@
 </div>
 
 <div>
-  <button (click) = "buttonClick()">Oluştur</button>
+  <button [disabled] = "!(length && (includeLetters || includeNumbers || includeSymbols))" (click) = "buttonClick()">Oluştur</button>
 </div>
 
 <div>
