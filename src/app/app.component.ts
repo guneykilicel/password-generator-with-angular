@@ -6,19 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'passwordApp';
-  password:string = 'Guney';
+  
+  includeLetters:boolean = false;
+  includeNumbers:boolean = false;
+  includeSymbols:boolean = false;
+
+  modifyLetters() {
+    this.includeLetters = !this.includeLetters;
+  }
+  modifyNumbers() {
+    this.includeNumbers = !this.includeNumbers;
+  }
+  modifySymbols() {
+    this.includeSymbols = !this.includeSymbols; 
+  }
 
   buttonClick() {
-    console.log("event binding'i öğreniyoruz.")
-    this.password = "Guney Kilicel";
-  }
-
-  getPassword() {
-    return this.password;
-  }
-
-  getName() {
-    return 'Irem';
+    console.log(`Değerlerim:
+    Letters: ${this.includeLetters}
+    Numbers: ${this.includeNumbers}
+    Symbols: ${this.includeSymbols}
+    `);
   }
 }
