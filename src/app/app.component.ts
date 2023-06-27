@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'passwordApp';
+
+  buttonClick() {
+    console.log("event binding'i öğreniyoruz.")
+  }
 }
