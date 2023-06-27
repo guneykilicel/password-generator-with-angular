@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'passwordApp';
+  password:string = 'Guney';
 
   buttonClick() {
     console.log("event binding'i öğreniyoruz.")
+    this.password = "Guney Kilicel";
+  }
+
+  getPassword() {
+    return this.password;
   }
 }
